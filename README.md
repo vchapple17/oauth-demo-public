@@ -12,6 +12,10 @@ Demonstartion of the OAuth 2.0 handshake using Python 2.7 and Google App Engine.
 
 Jan 2018
 
+## Where
+
+Demo page can be found here: https://stately-century-142323.appspot.com/
+
 ## Why
 
 Develop understanding of the handshake process of OAuth 2.0 without the abstraction of a third party library.
@@ -24,6 +28,7 @@ Develop understanding of the handshake process of OAuth 2.0 without the abstract
 * Update the config.py file with your client ID and secret.
 * Update the const.py file with your webapp's base URL.
 * Deploy app either locally or through Google App Engine.
+
 
 
 
