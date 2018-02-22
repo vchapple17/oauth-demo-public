@@ -19,10 +19,11 @@ Develop understanding of the handshake process of OAuth 2.0 without the abstract
 ## How
 
 * Register an app on through Google's Cloud console, saving the client ID and secret.
-* Through Google register your redirects, possibly localhost or the hosting website you'll be using. (I used Google app engine to host my app.)
+* Through Google register your redirects, possibly localhost or the hosting url.
 * Download repo.
 * Update the config.py file with your client ID and secret.
 * Update the const.py file with your webapp's base URL.
+* Deploy app either locally or through Google App Engine.
 
 
 
