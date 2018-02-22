@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- META TAGS-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <!-- Bootstrap & jquery-->
+  <script src="/static/js/jquery-2.2.4.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <br/>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">OAuth 2.0 Demo</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <a class="nav-item nav-link active" href="/oauth">Start<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue={{ url }}">Google Sign Out</a>
+      </div>
+    </nav>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <h1>OAuth 2.0 Demonstration</h1>
+          <p>Demonstration of the OAuth 2.0 flow using Google +.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <h2>Description</h2>
+          <p>
+            This app uses HTTP/REST to authenticate users.  Once this app is authorized by a Google+ user, it will display the user's first and last name, along with a link to the user's Google+ profile page.  Additionally, it will show the state variable used to authenticate the callback from Google.
+          </p>
+        </div>
+        <div class="col-md">
+          <h2>Begin Authorization</h2>
+          <p>
+            Please click the button below to authorize this application using Google+.  It will only request access to <code>email</code>.
+          </p>
+          <a class="btn-primary btn" href="/oauth/authorize">
+            Authorize App
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
